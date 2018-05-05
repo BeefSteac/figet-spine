@@ -1,0 +1,34 @@
+public abstract class Road {
+    String name="no";
+    double distance;
+    Place[] conectedPlaces=new Place[2];
+
+    public Road(String name, double distance, Place[] conectedPlaces) {
+        this.name = name;
+        this.distance = distance;
+        this.conectedPlaces = conectedPlaces;
+    }
+
+    public Road(double distance, Place[] conectedPlaces) {
+        this.distance = distance;
+        this.conectedPlaces = conectedPlaces;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public void setDistance(double distance) {
+        this.distance = distance;
+    }
+}
+
+
