@@ -1,0 +1,44 @@
+
+import java.util.LinkedList;
+public class Place {
+    private String name;
+    private LinkedList<Road> conectedRoads;
+
+    public Place(String name) {
+        this.name = name;
+    }
+
+    public Place(String name, LinkedList<Road> conectedRoads) {
+        this.name = name;
+        this.conectedRoads = conectedRoads;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public LinkedList<Road> getConectedRoads() {
+        return conectedRoads;
+    }
+
+    public void setConectedRoads(LinkedList<Road> conectedRoads) {
+        this.conectedRoads = conectedRoads;
+    }
+    public void addRoad(Road x){
+        conectedRoads.add(x);
+    }
+    public void delRoad(Road x){
+        conectedRoads.add(x);
+    }
+}
+
+
+
+
+
+
+
