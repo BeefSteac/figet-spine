@@ -1,0 +1,19 @@
+public class DirectedRoads extends Road{
+    private Place destination;
+    public DirectedRoads(String name, double distance, Place[] conectedPlaces) {
+        super(name,distance,conectedPlaces);
+        destination=conectedPlaces[1];
+    }
+    public DirectedRoads(double distance, Place[] conectedPlaces) {
+        super(distance,conectedPlaces);
+        destination=conectedPlaces[1];
+    }
+    public String getStartName(){
+        return conectedPlaces[0].getName();
+    }
+    public Place getDestination() {
+        return destination;
+    }
+}
+
+
